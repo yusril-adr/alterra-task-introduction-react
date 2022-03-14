@@ -10,7 +10,11 @@ import linkedinLogoImg from "../images/ic-linkedin@2x.png";
 
 const About = () => {
   useEffect(() => {
-    document.title = "About";
+    document.title = "Tentang Saya";
+
+    if (document.body.classList.contains('home-background')) {
+      document.body.classList.remove('home-background');
+    }
   }, []);
 
   return (

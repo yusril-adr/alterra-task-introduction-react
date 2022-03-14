@@ -4,6 +4,10 @@ import altaLogoImg from "../images/logo-ALTA-v2@2x.png";
 const ContactUs = () => {
   useEffect(() => {
     document.title = "Contact Us";
+
+    if (document.body.classList.contains('home-background')) {
+      document.body.classList.remove('home-background');
+    }
   }, []);
 
   return (

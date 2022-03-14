@@ -5,7 +5,11 @@ import unsplashImg from '../images/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg';
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Home";
+    document.title = "Beranda";
+
+    if (!document.body.classList.contains('home-background')) {
+      document.body.classList.add('home-background');
+    }
   }, []);
   
   return (
